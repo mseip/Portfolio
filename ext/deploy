@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+# Deploy to ssh server
+[[ -z "$SSH_HOST" || -z "$SSH_DIR" ]] && {
+    echo "Missing SSH_HOST ($SSH_HOST) or SSH_DIR ($SSH_DIR)."
+    exit 1
+}
+
+echo "Copying '$SSH_HOST' to '$SSH_DIR'"
+
+# TODO: rsync is probably a better tool for this.
+scp -r ./dist/* "$SSH_HOST":"$SSH_DIR"
+scp -r ./ext/.htaccess "$SSH_HOST":"$SSH_DIR"/.htaccess

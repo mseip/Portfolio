@@ -1,0 +1,4 @@
+# Deployment locations
+export SSH_HOST="ssh.host.local"
+export SSH_DIR="/home/user/public_html/example"
+
