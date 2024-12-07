@@ -1,14 +1,20 @@
 <template>
     <div class="hero relative top-[100px] mb-[100px] min-h-[calc(100vh/2)]">
         <div class="hero-content flex-col lg:flex-row">
-            <img src="/assets/me.png" class="max-w-xs me rounded-lg shadow-2xl mr-8 max-lg:hidden" />
+            <img
+                src="/assets/me.png"
+                class="max-w-xs me rounded-lg shadow-2xl mr-8 max-lg:hidden"
+            />
 
             <div class="max-lg:text-center">
                 <h2 class="text-xl opacity-80 font-bold text-secondary mb-4">Web Developer</h2>
                 <h1 class="text-5xl font-bold">Hi, I'm <span class="text-primary">Micah</span></h1>
 
                 <div class="max-lg:block lg:hidden p-8">
-                    <img src="/assets/me_mobile.png" class="max-w-xs h-[200px] me rounded-lg shadow-2xl m-auto" />
+                    <img
+                        src="/assets/me_mobile.png"
+                        class="max-w-xs h-[200px] me rounded-lg shadow-2xl m-auto"
+                    />
                 </div>
 
                 <p class="py-6 max-w-85 max-lg:w-full max-lg:p-10">
