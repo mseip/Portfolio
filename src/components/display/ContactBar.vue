@@ -1,15 +1,13 @@
 <template>
-    <!-- TODO: Fix these links -->
-
-    <li><a>About</a></li>
-    <li><a>Projects</a></li>
-    <li><a>Contact</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
     <li>
         <details>
             <summary>Resume</summary>
             <ul class="p-2">
-                <li><a>View Resume</a></li>
-                <li><a>Download Resume</a></li>
+                <li><a href="assets/documents/resume.pdf" target="_blank">View Resume</a></li>
+                <li><a href="assets/documents/resume.pdf">Download Resume</a></li>
             </ul>
         </details>
     </li>
@@ -34,5 +32,9 @@ const switchTheme = () => {
 <style>
 body {
     transition: background 0.5s;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 </style>

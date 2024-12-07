@@ -24,9 +24,9 @@
                 </p>
 
                 <div class="mt-4 grid lg:grid-cols-3 gap-4 lg:max-w-[70%] max-lg:px-8">
-                    <button class="btn btn-outline btn-primary">About Me</button>
-                    <button class="btn btn-outline btn-secondary">View Projects</button>
-                    <button class="btn btn-outline">Contact Me</button>
+                    <a class="btn btn-outline btn-primary" href="#about">About Me</a>
+                    <a class="btn btn-outline btn-secondary" href="#projects">View Projects</a>
+                    <a class="btn btn-outline" href="#contact">Contact Me</a>
                 </div>
             </div>
         </div>

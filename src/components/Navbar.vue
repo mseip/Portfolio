@@ -28,7 +28,9 @@
                     <ContactBar />
                 </ul>
             </div>
-            <a class="btn btn-ghost text-xl"> Micah <span class="text-primary">Seip</span> </a>
+            <a class="btn btn-ghost text-xl" href="#home">
+                Micah <span class="text-primary">Seip</span>
+            </a>
         </div>
 
         <div class="navbar-end hidden lg:flex">
@@ -40,5 +42,5 @@
 </template>
 
 <script setup lang="ts">
-import ContactBar from "./ContactBar.vue";
+import ContactBar from "./display/ContactBar.vue";
 </script>

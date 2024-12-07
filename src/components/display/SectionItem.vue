@@ -1,5 +1,5 @@
 <template>
-    <div class="section min-h-screen" :id="id">
+    <div class="section min-h-[90vh]" :id="id">
         <slot />
     </div>
 </template>

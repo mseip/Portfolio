@@ -9,13 +9,14 @@
 </template>
 
 <script lang="ts" setup>
+import SectionItem from "./components/display/SectionItem.vue";
 import Navbar from "./components/Navbar.vue";
-import SectionItem from "./components/SectionItem.vue";
 import Footer from "./components/Footer.vue";
 
 import HomeView from "./views/HomeView.vue";
 import AboutView from "./views/AboutView.vue";
 import ProjectsView from "./views/ProjectsView.vue";
+import ContactView from "./views/ContactView.vue";
 
 const views = [
     {
@@ -31,6 +32,11 @@ const views = [
     {
         id: "projects",
         component: ProjectsView,
+    },
+
+    {
+        id: "contact",
+        component: ContactView,
     },
 ];
 </script>
