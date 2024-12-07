@@ -8,6 +8,5 @@
 
 echo "Copying '$SSH_HOST' to '$SSH_DIR'"
 
-# TODO: rsync is probably a better tool for this.
-scp -r ./dist/* "$SSH_HOST":"$SSH_DIR"
-scp -r ./ext/.htaccess "$SSH_HOST":"$SSH_DIR"/.htaccess
+cp ./ext/.htaccess ./dist
+rsync -avz --delete -e ssh ./dist/ "$SSH_HOST":"$SSH_DIR"
