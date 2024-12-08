@@ -1,5 +1,5 @@
 export default {
-    linkedin: "https://ca.linkedin.com", // TODO: Add this
+    linkedin: "https://ca.linkedin.com",
     github: "https://github.com/mseip",
     contact: {
         email: "micahseip2003@gmail.com",

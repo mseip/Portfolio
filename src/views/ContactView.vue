@@ -2,26 +2,11 @@
     <CardItem color="default" heading="Contact Me" subheading="Get in Touch">
         <div class="flex min-w-full flex-wrap items-center justify-center mt-4">
             <div role="tablist" class="tabs tabs-bordered">
-                <input
-                    type="radio"
-                    name="contact_tab"
-                    role="tab"
-                    class="tab"
-                    aria-label="Send me a Message"
-                    v-model="choice"
-                    checked
-                    value="message"
-                />
+                <input type="radio" name="contact_tab" role="tab" class="tab" aria-label="Send me a Message"
+                    v-model="choice" checked value="message" />
 
-                <input
-                    type="radio"
-                    name="contact_tab"
-                    role="tab"
-                    class="tab"
-                    aria-label="Send me an Email"
-                    v-model="choice"
-                    value="email"
-                />
+                <input type="radio" name="contact_tab" role="tab" class="tab" aria-label="Send me an Email"
+                    v-model="choice" value="email" />
             </div>
         </div>
 
@@ -34,12 +19,7 @@
                                 <span class="label-text">Email*</span>
                             </label>
 
-                            <input
-                                type="email"
-                                placeholder="Contact Email"
-                                class="input input-bordered"
-                                required
-                            />
+                            <input type="email" placeholder="Contact Email" class="input input-bordered" required />
                         </div>
 
                         <div class="form-control">
@@ -47,12 +27,7 @@
                                 <span class="label-text">Name*</span>
                             </label>
 
-                            <input
-                                type="text"
-                                placeholder="Contact Name"
-                                class="input input-bordered"
-                                required
-                            />
+                            <input type="text" placeholder="Contact Name" class="input input-bordered" required />
                         </div>
 
                         <div class="form-control">
@@ -60,13 +35,8 @@
                                 <span class="label-text">Message*</span>
                             </label>
 
-                            <textarea
-                                name="message"
-                                id="message"
-                                placeholder="My message..."
-                                class="textarea textarea-bordered h-[150px]"
-                                required
-                            ></textarea>
+                            <textarea name="message" id="message" placeholder="My message..."
+                                class="textarea textarea-bordered h-[150px]" required></textarea>
                         </div>
 
                         <div class="form-control mt-6">
@@ -86,16 +56,10 @@
                         </h2>
 
                         <div class="mt-8">
-                            <button
-                                class="btn btn-outline btn-primary lg:mr-4"
-                                @click="copy(profile.contact.email)"
-                            >
+                            <button class="btn btn-outline btn-primary lg:mr-4" @click="copy(profile.contact.email)">
                                 Copy Email
                             </button>
-                            <button
-                                class="btn btn-outline btn-secondary"
-                                @click="copy(profile.contact.phone)"
-                            >
+                            <button class="btn btn-outline btn-secondary" @click="copy(profile.contact.phone)">
                                 Copy Phone
                             </button>
                         </div>
@@ -110,17 +74,10 @@
                 <h1 class="my-4 text-2xl">{{ profile.contact.email }}</h1>
 
                 <div class="mt-8 grid sm:grid-cols-2 gap-4">
-                    <button
-                        class="btn btn-outline btn-primary"
-                        @click="copy(profile.contact.email)"
-                    >
+                    <button class="btn btn-outline btn-primary" @click="copy(profile.contact.email)">
                         Copy
                     </button>
-                    <a
-                        class="btn btn-outline btn-secondary"
-                        :href="'mailto:' + profile.contact.email"
-                        _target="_blank"
-                    >
+                    <a class="btn btn-outline btn-secondary" :href="'mailto:' + profile.contact.email" _target="_blank">
                         Open
                     </a>
                 </div>
@@ -132,17 +89,10 @@
                 <h1 class="my-4 text-2xl">{{ profile.contact.phone }}</h1>
 
                 <div class="mt-8 grid sm:grid-cols-2 gap-4">
-                    <button
-                        class="btn btn-outline btn-primary"
-                        @click="copy(profile.contact.phone)"
-                    >
+                    <button class="btn btn-outline btn-primary" @click="copy(profile.contact.phone)">
                         Copy
                     </button>
-                    <a
-                        class="btn btn-outline btn-secondary"
-                        :href="'tel:' + profile.contact.phone"
-                        _target="_blank"
-                    >
+                    <a class="btn btn-outline btn-secondary" :href="'tel:' + profile.contact.phone" _target="_blank">
                         Open
                     </a>
                 </div>
@@ -155,7 +105,7 @@
 import { ref } from "vue";
 import { useToast } from "vue-toastification";
 
-import profile from "@/data/profile";
+import profile from "@/config/profile";
 
 import CardItem from "@/components/display/CardItem.vue";
 

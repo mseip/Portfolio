@@ -1,5 +1,7 @@
 import type { Project } from "@/types/project";
 
+import deploy from "./deploy";
+
 export default {
     languages: [
         ["Vue", 100, "progress-success"],
@@ -15,7 +17,7 @@ export default {
             title: "Minesweeper",
             tools: ["Java", "JavaFX"],
             description: "A simple Minesweeper clone with custom difficulties. Built using JavaFX.",
-            image: "/MAD503/assets/projects/minesweeper.png",
+            image: `${deploy.dir}/assets/projects/minesweeper.png`,
         },
 
         {
@@ -23,14 +25,14 @@ export default {
             tools: ["HTML", "CSS", "JS/TS"],
             description: "This is a personal resume style website built with pure HTML and CSS.",
             url: "https://mseip.scweb.ca/WEB110/bonus/",
-            image: "/MAD503/assets/projects/resume.png",
+            image: `${deploy.dir}/assets/projects/resume.png`,
         },
 
         {
             title: "Throwing Simulator",
             tools: ["Java", "JavaFX"],
             description: "An object throwing simulator built with JavaFX.",
-            image: "/MAD503/assets/projects/throwing.png",
+            image: `${deploy.dir}/assets/projects/throwing.png`,
         },
 
         {
@@ -38,7 +40,7 @@ export default {
             tools: ["JS/TS", "HTML", "CSS"],
             description: "A simple personal website built with pure HTML and CSS.",
             url: "https://mseip.scweb.ca/WEB210/micah-seip-portfolio/",
-            image: "/MAD503/assets/projects/personal.png",
+            image: `${deploy.dir}/assets/projects/personal.png`,
         },
 
         {
@@ -46,7 +48,7 @@ export default {
             tools: ["Java", "JavaFX", "SQL"],
             description:
                 "Vaultify is a Java based application designed to store and manage passwords securely.",
-            image: "/MAD503/assets/projects/vaultify.png",
+            image: `${deploy.dir}/assets/projects/vaultify.png`,
             vcs: "https://github.com/AnandOtivCode/Vaultify"
         },
 
@@ -54,8 +56,8 @@ export default {
             title: "Personal Portfolio",
             tools: ["Vue", "PHP", "JS/TS"],
             description: "A portfolio built with Vue and Typescript. You are currently here :)",
-            image: "/MAD503/assets/projects/portfolio.png",
-            url: "https://mseip.scweb.ca/MAD503/",
+            image: `${deploy.dir}/assets/projects/portfolio.png`,
+            url: deploy.url,
             vcs: "https://github.com/mseip/Portfolio",
         },
     ] as Project[],

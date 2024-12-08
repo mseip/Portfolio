@@ -60,7 +60,7 @@ import { ref } from "vue";
 
 import CardItem from "@/components/display/CardItem.vue";
 
-import projects from "@/data/projects";
+import projects from "@/config/projects";
 
 const selLang = ref("");
 

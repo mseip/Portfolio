@@ -25,14 +25,27 @@ $ pnpm run format
 To deploy to an external server using `rsync`, you can use the deploy script found in `ext/deploy`. [direnv](https://direnv.net/) is recommended for this step.
 
 ```sh
-# Edit & source .envrc (done automatically with direnv)
+# Edit & Source .envrc (done automatically with direnv)
 $ cp .envrc.example .envrc
 $ source .envrc # ONLY if direnv is not installed.
 
-# Build and deploy
+# Copy & Edit .env
+$ cp .env.example .env
+
+# Build & Deploy
 $ pnpm run build && pnpm run deploy
 $ pnpm run clean # optional, remove the build directory.
 ```
+
+## Messages
+
+This portfolio has a very basic messages API in `/api`. To use it, you need a server configured to use PHP. Copy and edit the configuration.
+
+```sh
+$ cp api/config.example.php api/config.php
+```
+
+Ensure `VITE_API` matches the config URL.
 
 ## LICENSE
 

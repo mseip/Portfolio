@@ -26,10 +26,7 @@
                         </div>
                     </div>
 
-                    <hr
-                        v-if="i < about.timeline.length - 1"
-                        :class="time.complete ? 'bg-secondary' : ''"
-                    />
+                    <hr v-if="i < about.timeline.length - 1" :class="time.complete ? 'bg-secondary' : ''" />
                 </li>
             </ul>
         </div>
@@ -79,5 +76,5 @@ import { CheckBadgeIcon } from "@heroicons/vue/16/solid";
 
 import CardItem from "@/components/display/CardItem.vue";
 
-import about from "@/data/about";
+import about from "@/config/about";
 </script>

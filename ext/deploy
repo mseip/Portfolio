@@ -7,6 +7,11 @@ if [[ -z "$SSH_HOST" || -z "$SSH_DIR" || ! -d "./dist" ]]; then
 fi
 
 echo "Copying '$SSH_HOST' to '$SSH_DIR'"
+read -r -p "Upload server and .htaccess? (y/N): " choice
 
-cp ./ext/.htaccess ./dist
+if [[ "$choice" == [Yy]* ]]; then
+    cp ./ext/.htaccess ./dist
+    cp -r ./api ./dist
+fi
+
 rsync -avz --delete -e ssh ./dist/ "$SSH_HOST":"$SSH_DIR"
