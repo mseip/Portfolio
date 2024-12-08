@@ -1,39 +1,39 @@
-# portfolio
+# Portfolio
 
-This template should help get you started developing with Vue 3 in Vite.
+![last-commit](https://img.shields.io/github/last-commit/mseip/portfolio) ![code-style](https://img.shields.io/badge/code_style-prettier-ff69b4.svg) ![issues-closed](https://img.shields.io/github/issues-closed/mseip/portfolio)
 
-## Recommended IDE Setup
+Simple portfolio built with Vue and Typescript.
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+![preview](/public/assets/projects/portfolio.png)
 
-## Type Support for `.vue` Imports in TS
+## Setup
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
+You can use either `npm` or `pnpm`.
 
 ```sh
-pnpm install
+# Test & Build
+$ pnpm run dev
+$ pnpm run build
+
+# Lint & Format
+$ pnpm run lint
+$ pnpm run format
 ```
 
-### Compile and Hot-Reload for Development
+## Deployment
+
+To deploy to an external server using `rsync`, you can use the deploy script found in `ext/deploy`. [direnv](https://direnv.net/) is recommended for this step.
 
 ```sh
-pnpm dev
+# Edit & source .envrc (done automatically with direnv)
+$ cp .envrc.example .envrc
+$ source .envrc # ONLY if direnv is not installed.
+
+# Build and deploy
+$ pnpm run build && pnpm run deploy
+$ pnpm run clean # optional, remove the build directory.
 ```
 
-### Type-Check, Compile and Minify for Production
+## LICENSE
 
-```sh
-pnpm build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-pnpm lint
-```
+[MIT](MIT)
