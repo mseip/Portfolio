@@ -1,52 +1,44 @@
 export default {
-    // TODO: Add these
     timeline: [
         {
-            name: "Namae",
-            date: "Date",
+            name: "Moved to Canada",
+            date: "2007",
             complete: true,
-            description: "hello world",
+            description: "I moved to Canada at the age of 4.",
         },
 
         {
-            name: "The",
+            name: "Moved to Windsor",
+            date: "2009",
+            complete: true,
+            description: "After traveling across Ontario, I finally settled in Windsor",
+        },
+
+        {
+            name: "Enrolled at St. Clair",
             date: "2024",
             complete: true,
-            description: "hello world",
+            description: "This is the year I first enrolled at St. Clair college for Computer Programming.",
         },
 
         {
-            name: "Time",
-            date: "2025",
-            complete: true,
-            description: "hello world",
+            name: "Future Goals",
+            date: "2025+",
+            complete: false,
+            description: "I am a student eager to explore future opportunities in the field of web and software development.",
         },
 
-        {
-            name: "Tiaaaame",
-            date: "2025",
-            complete: true,
-            description: "hello world",
-        },
-
-        {
-            name: "Naaaaaaame",
-            date: "Date",
-            complete: true,
-            description: "hello world",
-        },
     ],
 
-    // TODO: These need to be improved
     skills: {
         ui: [
             [
                 "Designs with Figma",
-                "Skilled in creating wireframes, prototypes, and high-fidelity UI designs, while collaborating in real-time using Figma.",
+                "Skilled in creating wireframes, prototypes, and high-quality UI designs using Figma.",
             ],
             [
                 "Photoshop & GIMP",
-                "Proficient in designing and editing graphics, icons, and visual assets for web and mobile applications using Photoshop and GIMP.",
+                "Proficient in designing and editing graphics, icons, and assets for web and mobile applications using Photoshop and GIMP.",
             ],
             [
                 "UML & Diagramming",
@@ -61,19 +53,19 @@ export default {
         server: [
             [
                 "Linux Server Management",
-                "Experienced in managing and configuring Linux servers, including troubleshooting, performance optimization, and security hardening.",
+                "Experienced in managing and configuring Linux servers, including troubleshooting, optimization, and automation.",
             ],
             [
                 "Docker & Kubernetes",
-                "Proficient in containerizing applications with Docker and orchestrating them using Kubernetes for scalable and efficient deployment.",
+                "Proficient in containerizing applications with Docker and orchestrating them using Kubernetes for scalable and deployment.",
             ],
             [
                 "Proxmox & VMWare",
-                "Skilled in managing virtualized environments using Proxmox and VMware for efficient resource allocation and VM management.",
+                "Skilled in managing virtualized environments using Proxmox and VMware for efficient VM management.",
             ],
             [
                 "Ansible & Bash Scripting",
-                "Experienced in automating server management and deployments using Ansible and writing Bash scripts for system administration tasks.",
+                "Experienced in automating server management using Ansible and writing shell scripts for system administration tasks.",
             ],
         ],
     },

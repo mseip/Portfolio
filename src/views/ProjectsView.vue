@@ -4,7 +4,6 @@
             TIP: Click on a language to highlight the projects that use it!
         </h2>
 
-        <!-- TODO: This should be a grid -->
         <div class="flex justify-around flex-wrap p-8">
             <div class="card bg-base-100 shadow-xl hover:scale-[1.1] transition-transform mb-4 mx-4"
                 v-for="lang in projects.languages" :key="lang[0]" @click="toggleLanguage(String(lang[0]))"
@@ -12,8 +11,7 @@
                 <div class="card-body">
                     <h2 class="card-title">{{ lang[0] }}</h2>
                     <div class="flex items-center">
-                        <progress class="progress w-[80%]" :class="colors[Math.floor(Math.random() * colors.length)]"
-                            :value="lang[1]" max="100"></progress>
+                        <progress class="progress w-[80%]" :class="lang[2]" :value="lang[1]" max="100"></progress>
                         <span class="font-bold ml-2">{{ lang[1] }}%</span>
                     </div>
                 </div>
@@ -25,7 +23,8 @@
         <div class="flex justify-around flex-wrap p-8">
             <div v-for="project in projects.projects" class="card bg-base-100 w-96 shadow-xl mb-4"
                 :class="project.tools.includes(selLang) ? 'selected-card' : ''">
-                <figure v-if="project.image" class="bg-top" :style="'background-image: url(\'' + project.image + '\')'">
+                <figure v-if="project.image" class="opacity-60"
+                    :style="'background-image: url(\'' + project.image + '\'); background-position: center center'">
                     <div class="min-h-[200px]"></div>
                 </figure>
 
@@ -52,7 +51,7 @@
 
 <style>
 .selected-card {
-    box-shadow: 0 0 4px 0 rgba(255, 190, 0, 0.4);
+    box-shadow: 0 0 4px 1px rgba(255, 190, 0, 0.8);
 }
 </style>
 
@@ -62,16 +61,6 @@ import { ref } from "vue";
 import CardItem from "@/components/display/CardItem.vue";
 
 import projects from "@/data/projects";
-
-const colors = [
-    "progress-primary",
-    "progress-secondary",
-    "progress-accent",
-    "progress-info",
-    "progress-success",
-    "progress-warning",
-    "progress-error",
-];
 
 const selLang = ref("");
 
