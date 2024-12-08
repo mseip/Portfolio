@@ -1,6 +1,9 @@
 RewriteEngine On
 RewriteBase /MAD503/
 
+# Allow API
+RewriteCond %{REQUEST_URI} !^/MAD503/api
+
 RewriteRule ^index\.html$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d

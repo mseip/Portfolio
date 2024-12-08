@@ -45,7 +45,7 @@ This portfolio has a very basic messages API in `/api`. To use it, you need a se
 $ cp api/config.example.php api/config.php
 ```
 
-Ensure `VITE_API` matches the config URL.
+Ensure `VITE_API` matches the API URL and CORS is configured correctly.
 
 ## LICENSE
 
