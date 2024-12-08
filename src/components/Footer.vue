@@ -1,8 +1,10 @@
 <template>
-    <footer class="footer bg-base-200 text-neutral-content items-center p-4">
+    <footer class="footer bg-base-200 items-center p-4">
         <aside class="grid-flow-col items-center">
             <img src="/assets/logo/logo-round.png" alt="Logo" class="h-[3em] w-[3em] mr-2" />
-            <p class="font-bold">Copyright © {{ new Date().getFullYear() }} - Micah Seip</p>
+            <p class="font-bold base-content">
+                Copyright © {{ new Date().getFullYear() }} - Micah Seip
+            </p>
         </aside>
 
         <nav class="grid-flow-col gap-4 md:place-self-center md:justify-self-end">

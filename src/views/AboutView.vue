@@ -1,7 +1,9 @@
 <template>
     <CardItem color="primary" heading="About Me" subheading="Timeline" class="mb-8">
         <div class="m-auto pt-[50px] max-xl:hidden">
-            <h2 class="mb-[50px] text-center italic opacity-60">TIP: You can hover over a point for more details!</h2>
+            <h2 class="mb-[50px] text-center italic opacity-60">
+                TIP: You can hover over a point for more details!
+            </h2>
 
             <ul class="timeline">
                 <li v-for="(time, i) in about.timeline" :key="time.name">
@@ -24,13 +26,16 @@
                         </div>
                     </div>
 
-                    <hr v-if="i < about.timeline.length - 1" :class="time.complete ? 'bg-secondary' : ''" />
+                    <hr
+                        v-if="i < about.timeline.length - 1"
+                        :class="time.complete ? 'bg-secondary' : ''"
+                    />
                 </li>
             </ul>
         </div>
 
         <div class="xl:hidden max-xl:grid grid-cols-2 gap-4 mt-4">
-            <div v-for="time in about.timeline" :key="time.name" class=" rounded-md bg-base-300 p-4">
+            <div v-for="time in about.timeline" :key="time.name" class="rounded-md bg-base-300 p-4">
                 <h2 class="font-bold">
                     <span class="text-secondary">{{ time.date }}</span> - {{ time.name }}
                 </h2>
