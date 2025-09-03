@@ -4,8 +4,6 @@
 
 Simple portfolio built with Vue and Typescript.
 
-![preview](/public/assets/projects/portfolio.png)
-
 ## Setup
 
 You can use either `npm` or `pnpm`.
